@@ -45,7 +45,6 @@ ol {
   margin: 0;
   gap: 30px;
   align-items: flex-end;
-  justify-content: center;
 }
 
 .visually-hidden {
