@@ -10,6 +10,7 @@ html {
 
 .page {
   inline-size: 1200px;
+  padding: 133px 30px 133px 30px;
   block-size: 100%;
   margin: auto;
   color: #fff;
@@ -41,7 +42,6 @@ ol {
 
 .content {
   display: flex;
-  padding: 133px 30px 133px 30px;
   margin: 0;
   gap: 30px;
   align-items: flex-end;
@@ -115,7 +115,7 @@ ol {
 }
 
 .preloader {
-  position: absolute;
+  position:relative;
 }
 
 .search-form__fieldset-title {
