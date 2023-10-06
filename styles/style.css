@@ -97,7 +97,7 @@ ol {
 .content__details {
   height: 100%;
   width: 399px;
-  inline-size: 411px;
+  overflow-x: hidden;
 }
 
 .content__video-card {
