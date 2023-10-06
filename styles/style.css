@@ -81,7 +81,7 @@ ol {
 
 .content__list {
   height: 298px;
-  overflow: scroll;
+  overflow: auto;
   position: relative;
   width: 399px;
 }
@@ -112,6 +112,10 @@ ol {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
+}
+
+.content__video-card-description-container {
+  width: 100%;
 }
 
 .content__video-card-description-container:focus {
