@@ -323,4 +323,5 @@ input[type='checkbox']:checked
 .more-button {
   width: 399px;
   height: 34px;
+  padding: 0;
 }
