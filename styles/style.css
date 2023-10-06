@@ -10,7 +10,6 @@ html {
 
 .page {
   inline-size: 1200px;
-  padding: 133px 30px;
   block-size: 100%;
   margin: auto;
   color: #fff;
@@ -84,6 +83,7 @@ ol {
   height: 298px;
   overflow: scroll;
   position: relative;
+  width: 399px;
 }
 
 .content__list-item:not(:last-child) {
@@ -114,8 +114,9 @@ ol {
   width: 100%;
 }
 
-.preloader {
-  position:relative;
+.content__video-card-description-container:focus {
+  outline: none;
+  border: none;
 }
 
 .search-form__fieldset-title {
@@ -154,12 +155,22 @@ ol {
   background-color: #545050;
 }
 
+.content__card-link:focus {
+  outline: none;
+  border: none;
+}
+
+.content__card-link:focus-visible {
+  border: 1px solid #fff;
+}
+
 .content__card-link_current {
   background-color: #545050;
 }
 
 .content__card-link_current:focus {
   outline: none;
+  border: none;
 }
 
 .content__card-link_current:focus-visible {
@@ -177,7 +188,7 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed, sans-serif;;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
@@ -187,10 +198,6 @@ ol {
   display: flex;
   align-items: center;
   cursor: pointer;
-}
-
-.search-form__label-text:hover {
-  text-decoration: underline;
 }
 
 .search-form__textfield {
@@ -211,8 +218,30 @@ ol {
   line-height: normal;
 }
 
+.search-form__textfield:active {
+  outline: none;
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__label:hover:has(input[type="checkbox"]) {
+  text-decoration: underline;
+}
+
+.search-form__textfield:hover {
+  text-decoration: none;
+}
+
+.search-form__label:focus {
+  outline: none;
+  border: none;
+}
+
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .search-form__fieldset {
@@ -244,9 +273,8 @@ ol {
   cursor: pointer;
 }
 
-.search-form__label
-  input[type="checkbox"]:checked
-  + .search-form__pseudo-checkbox {
+input[type='checkbox']:checked 
++ .search-form__pseudo-checkbox  {
   outline: 1px solid #1b1919;
   outline-offset: -2px;
   background-color: white;
@@ -277,6 +305,19 @@ ol {
 .search-form__submit-button {
   width: 194px;
   height: 34px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .more-button {
