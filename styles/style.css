@@ -83,7 +83,7 @@ ol {
   height: 298px;
   overflow: scroll;
   position: relative;
-  width: 399px;
+  width: 405px;
 }
 
 .content__list-item:not(:last-child) {
@@ -144,6 +144,7 @@ ol {
   color: #545050;
 }
 
+/*Пересмотрела все элементы в контейнере, все по ширине не превышают 399px, нигде нет паддингов и аутлайнов, на моем экране горизонтального скроллбара не появляется, но если смотрю с компа, он есть.*/
 .content__card-link {
   text-decoration: none;
   color: #fff;
