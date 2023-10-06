@@ -111,7 +111,7 @@ ol {
 }
 
 .content__video-card-description-container {
-  width: 399px;
+  width: 100%;
 }
 
 .content__video-card-description-container:focus {
@@ -149,6 +149,7 @@ ol {
   color: #fff;
   font-style: normal;
   display: block;
+  width: 399px;
 }
 
 .content__card-link:active {
