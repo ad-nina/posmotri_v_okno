@@ -114,10 +114,6 @@ ol {
   height: 103px;
 }
 
-.content__video-card-description-container {
-  width: 100%;
-}
-
 .content__video-card-description-container:focus {
   outline: none;
   border: none;
