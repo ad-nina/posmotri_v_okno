@@ -83,20 +83,20 @@ ol {
   height: 298px;
   overflow: auto;
   position: relative;
-  width: 399px;
+  width: 425px;
 }
 
 .content__list-item {
   width: 399px;
 }
 
-.content__list-item:not(:last-child) {
+.content__list-item {
   margin-bottom: 30px;
 }
 
 .content__details {
   height: 100%;
-  width: 399px;
+  width: 425px;
 }
 
 .content__video-card {
@@ -209,8 +209,8 @@ ol {
   width: 225px;
   height: 27px;
   gap: 10px;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-block-start: 1px solid #FFFFFF;
+  border-block-end: 1px solid #FFFFFF;
   border-left: none;
   border-right: none;
   background-color: transparent;
@@ -223,30 +223,37 @@ ol {
   line-height: normal;
 }
 
-.search-form__textfield:active {
+.search-form__label:focus {
   outline: none;
+  border: none;
 }
 
-.search-form__textfield:focus {
-  outline: none;
+.search-form__label:has(:focus-visible):has(input[type="checkbox"]) {
+  outline: 1px solid #fff;
 }
 
 .search-form__label:hover:has(input[type="checkbox"]) {
   text-decoration: underline;
 }
 
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__textfield:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+  border-block-start: 1px solid #FFFFFF;
+  border-block-end: 1px solid #FFFFFF;
+}
+
 .search-form__textfield:hover {
   text-decoration: none;
 }
 
-.search-form__label:focus {
+.search-form__textfield:active {
   outline: none;
-  border: none;
-}
-
-.search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
+  border: 1px solid #fff;
 }
 
 .search-form__fieldset {
@@ -278,11 +285,13 @@ ol {
   cursor: pointer;
 }
 
-input[type='checkbox']:checked 
-+ .search-form__pseudo-checkbox  {
-  outline: 1px solid #1b1919;
-  outline-offset: -2px;
-  background-color: white;
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  content: "";
+  display: block;
+  background-color: #FFFFFF;
+  inline-size: 15px;
+  block-size: 15px;
+  margin: 2px;
 }
 
 .button {
@@ -328,5 +337,5 @@ input[type='checkbox']:checked
 .more-button {
   width: 399px;
   height: 34px;
-  padding: 0;
+  margin: 3px;
 }
